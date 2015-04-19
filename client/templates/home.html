@@ -3,6 +3,16 @@
 ## Welcome to my Blog
 Here I'm talking about my latest discoveries from the world of Javascript.
 {{/markdown}}
-{{exampleHelper}}
-{{#with dataContextHelper}}{{> contextExample}}{{/with}}
+{{#each postsList}}{{> postInList}}{{/each}}
+</template>
+<template name="postInList">
+    <div class="postListItem">
+        <h2><a href="#">{{title}}</a></h2>
+        <p>{{description}}</p>
+        <div class="footer">
+            <time datetime='{{formatTime timeCreated "iso"}}'>
+                Posted {{formatTime timeCreated 'fromNow'}} by {{author}}
+            </time>
+        </div>
+    </div>
 </template>

@@ -11,18 +11,17 @@ Template.home.onDestroyed(function() {
 });
 
 Template.home.helpers({
-    exampleHelper: function() {
-        return new Spacebars.SafeString('This text came from a helper with some <strong>HTML</strong>.');
-    }
-});
-
-Template.home.helpers({
-    dataContextHelper: function() {
-        return {
-            someText: 'This sentence was set using a helper of the parent template.',
-            someNested: {
-                text: 'While, this sentence comes from "someNested.text".'
-            }
-        };
+    postsList: function() {
+        return [{
+            title: 'My Second entry',
+            description: 'A very unique blend of mystery and comedy',
+            author: 'Kaben Naby',
+            timeCreated: moment().subtract(3, 'days').unix()
+        }, {
+            title: 'My First entry',
+            description: 'A horror story with no foreseeable end',
+            author: 'Kaben Naby',
+            timeCreated: moment().subtract(7, 'days').unix()
+        }];
     }
 });
