@@ -12,6 +12,17 @@
     </header>
 
     <div class="container">
-        <main>{{> home}}</main>
+        <main>{{> yield}}</main>
+    </div>
+</template>
+<template name="notFound">
+    <div class="center">
+        <h1>Nothing here</h1><br>
+        <h2>You hit a page which doesn't exist!</h2>
+    </div>
+</template>
+<template name="loading">
+    <div class="center">
+        <h1>Loading</h1>
     </div>
 </template>
