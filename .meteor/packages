@@ -5,9 +5,11 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 less
 markdown
 iron:router
 momentjs:moment
 gandev:server-eval
+accounts-ui
+accounts-password
+wizonesolutions:underscore-string

@@ -3,6 +3,9 @@
 ## Welcome to my Blog
 Here I'm talking about my latest discoveries from the world of Javascript.
 {{/markdown}}
+{{#if currentUser.roles.admin}}
+    <a class="createNewPost" href="/create-post">Create new post</a>
+    {{/if}}
 {{#each postsList}}{{> postInList}}{{/each}}
 <button class="lazyload">Load more</button>
 </template>
