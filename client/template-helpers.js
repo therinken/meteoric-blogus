@@ -1,10 +1,10 @@
 Template.registerHelper('formatTime', function(time, type) {
     switch (type) {
         case 'fromNow':
-            return moment(time).fromNow();
+            return moment.unix().fromNow();
         case 'iso':
-            return moment(time).toISOString();
+            return moment.unix().toISOString();
         default:
-            return moment(time).format('LLLL');
+            return moment.unix().format('LLLL');
     }
 });
