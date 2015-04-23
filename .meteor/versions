@@ -38,6 +38,7 @@ localstorage@1.0.3
 logging@1.0.7
 markdown@1.0.4
 meteor@1.1.6
+meteor-book:reactive-timer@0.0.1
 meteor-platform@1.2.2
 minifiers@1.1.5
 minimongo@1.0.8

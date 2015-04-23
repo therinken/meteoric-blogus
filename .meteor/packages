@@ -13,3 +13,4 @@ gandev:server-eval
 accounts-ui
 accounts-password
 wizonesolutions:underscore-string
+meteor-book:reactive-timer

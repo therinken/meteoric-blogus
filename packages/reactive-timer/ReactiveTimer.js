@@ -17,6 +17,3 @@ ReactiveTimer = (function(){
     };
     return ReactiveTimer;
 })();
-
-timer = new ReactiveTimer();
-timer.start(10);
